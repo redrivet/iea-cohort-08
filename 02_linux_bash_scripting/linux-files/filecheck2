@@ -1,0 +1,21 @@
+#!/bin/bash
+#echo "Enter your filename"
+#append='inspected by NL'
+#read filename
+files="$@"
+for filename in $files
+do
+  if [ -z "$filename" ];
+  then
+	  echo "no input file"
+  else
+      if [ -f "$filename" ]; 
+      then
+          echo ""
+          echo 'inspected by NL' >> $filename
+       else
+	   echo "file is not found"    
+   	 fi
+  fi		
+done
+
