@@ -1,1 +1,12 @@
+# ignore Jupyter notebooks
 .ipynb_checkpoints/
+
+# ignore all files in these directories
+/home/croy/iea-cohort-08/00_introduction/
+/home/croy/iea-cohort-08/01_devops_concepts/
+/home/croy/iea-cohort-08/02_linux_bash_scripting/demos/
+/home/croy/iea-cohort-08/02_linux_bash_scripting/images/
+/home/croy/iea-cohort-08/03_mastering_git/
+
+# individual files
+nøkkel
