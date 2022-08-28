@@ -9,14 +9,20 @@
 # beware of edge cases
 
 # find . -type f -exec file --mime-type {} \+ | awk -F: '{if ($2 ~/image\//) print $1}'
+shopt -s lastpipe
 
-find . -type f -print0 | xargs -0 file --mime-type | grep -F 'image/' | cut -d ':' -f 1
+find . -type f -print0 | 
+    xargs -0 file --mime-type | 
+    grep -F 'image/' | 
+    cut -d ':' -f 1 |
+    filelist=$(</dev/stdin) # printf "This is my list of files:\n%s$filelist\n"
 
-# # for filename in ./*; do
-#    if [[ -f "$filename" ]]; then
-#        base=${filename%.*}
-#        ext=${filename#"$base".}
-#      mkdir -p "${ext}"
-#      cp "$filename" "${ext}"
-#    fi
-#  done
+for filename in $filelist; do
+     # if [[ -f "$filename" ]]; then
+         printf "I found %s$filename.\n"
+# #        base=${filename%.*}
+# #        ext=${filename#"$base".}
+# #      mkdir -p "${ext}"
+# #      cp "$filename" "${ext}"
+     # fi
+done
