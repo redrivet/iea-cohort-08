@@ -8,7 +8,7 @@
 # Write a shell script that find all image files created after a specific date and copies them to a new directory
 # beware of edge cases
 
-# try it without the use of 'find' first
+# try it without the use of 'find' first - not recommended and a bit clunky
 
 shopt -s extglob # turns on extended pattern matching features
 

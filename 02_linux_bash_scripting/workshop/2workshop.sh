@@ -17,12 +17,8 @@ find . -type f -print0 |
     cut -d ':' -f 1 |
     filelist=$(</dev/stdin) # printf "This is my list of files:\n%s$filelist\n"
 
-for filename in $filelist; do
-     # if [[ -f "$filename" ]]; then
-         printf "I found %s$filename.\n"
-# #        base=${filename%.*}
-# #        ext=${filename#"$base".}
-# #      mkdir -p "${ext}"
-# #      cp "$filename" "${ext}"
-     # fi
+for item in $filelist; do
+    printf "Image file found: %s$item\n" 
+    # mkdir -p "directory_tbd"
+    # cp "$item" #directory_tbd
 done
