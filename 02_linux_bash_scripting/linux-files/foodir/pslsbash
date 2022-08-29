@@ -1,0 +1,55 @@
+total 0
+dr-xr-xr-x   9 CORP\nwaterman CORP\domain users 0 Aug 15 11:07 .
+dr-xr-xr-x 175 root           root              0 Aug 14 02:53 ..
+dr-xr-xr-x   2 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 attr
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 autogroup
+-r--------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 auxv
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 cgroup
+--w-------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 clear_refs
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 15 11:07 cmdline
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 comm
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 coredump_filter
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 cpuset
+lrwxrwxrwx   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 cwd -> /home/nwaterman/iea-cohort-08/02_linux_bash_scripting/linux-files/foodir
+-r--------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 environ
+lrwxrwxrwx   1 CORP\nwaterman CORP\domain users 0 Aug 15 11:07 exe -> /usr/bin/bash
+dr-x------   2 CORP\nwaterman CORP\domain users 0 Aug 15 11:07 fd
+dr-x------   2 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 fdinfo
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 gid_map
+-r--------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 io
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 latency
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 limits
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 loginuid
+dr-x------   2 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 map_files
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 maps
+-rw-------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 mem
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 mountinfo
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 mounts
+-r--------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 mountstats
+dr-xr-xr-x   6 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 net
+dr-x--x--x   2 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 ns
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 numa_maps
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 oom_adj
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 oom_score
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 oom_score_adj
+-r--------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 pagemap
+-r--------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 patch_state
+-r--------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 personality
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 projid_map
+lrwxrwxrwx   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 root -> /
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 sched
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 schedstat
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 sessionid
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 setgroups
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 smaps
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 smaps_rollup
+-r--------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 stack
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 15 11:07 stat
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 statm
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 15 11:07 status
+-r--------   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 syscall
+dr-xr-xr-x   3 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 task
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 timers
+-rw-rw-rw-   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 timerslack_ns
+-rw-r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 uid_map
+-r--r--r--   1 CORP\nwaterman CORP\domain users 0 Aug 17 13:45 wchan

@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Search for a File"
+read filename
+for filename in cwd; do
+if [ -f "$filename" ]; then echo "" > /dev/null
+else
+	echo 'File not found'
+fi
+done

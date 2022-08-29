@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "hamlet.txt"
+read filename
+if [ -f "$hamlet.txt" ] then
+else
+	echo "hamlet.txt not found"
+fi
