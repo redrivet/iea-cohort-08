@@ -1,0 +1,5 @@
+--- foo.txt	2022-08-18 13:44:31.810285916 -0400
++++ foo2.txt	2022-08-18 13:43:43.674049755 -0400
+@@ -1 +1 @@
+-This is NOT the same
++Hello this is a difference
