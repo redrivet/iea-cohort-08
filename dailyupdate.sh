@@ -1,8 +1,8 @@
 #!/bin/bash 
 message="daily jupyter update from $USER@$(hostname -s) on $(date)"
 git add .
-echo $?
+echo $? >> script.log
 git commit -m "$message"
-echo $?
+echo $? >> script.log
 git push origin devbranch
-echo $?
+echo $? >> script.log
