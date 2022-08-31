@@ -1,6 +1,6 @@
 #!/bin/bash 
-cp script.log /home/nlawson/scriptlog/script.log_$(date '+%Y%m%d%s') 
-message='daily jupyter update from $USER@$(hostname -s) on $(date)'
+cp script.log /home/nlawson/scriptlog/script.log_$date+%Y%m%d%s 
+message="Updated juypter on `date +'%Y-%m-%d %H:%M:%S'`"
 git add . >script.log 2>&1; echo 'exit code' $? >> script.log
 if [ $? -eq 0 ]
 then 
