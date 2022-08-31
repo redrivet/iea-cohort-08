@@ -1,5 +1,5 @@
 #!/bin/bash 
-cp script.log /home/nlawson/scriptlog/script.log_$date+%Y%m%d%s 
+cp script.log /home/nlawson/scriptlog/script.log_$(date+"%Y%m%d%s") 
 message="Updated juypter on `date +'%Y-%m-%d %H:%M:%S'`"
 git add . >script.log 2>&1; echo 'exit code' $? >> script.log
 if [ $? -eq 0 ]
@@ -17,7 +17,6 @@ else
   echo "add failed, check log"
   exit 
 fi
-#echo 'exit code' $? >> script.log
 git push origin devbranch >>script.log 2>&1; echo 'exit code' $? >> script.log
 if [ $? -eq 0 ]
 then 
