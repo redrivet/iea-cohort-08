@@ -17,7 +17,7 @@ then
   echo "commit completed successfully"
 else 
   echo 'exit code' $? 
-  echo "add failed, check log"
+  echo "commit failed, check log"
   exit 1
 fi
 git push origin devbranch >>script.log 2>&1 >> script.log
@@ -26,6 +26,6 @@ then
   echo "push completed successfully"
 else 
   echo 'exit code'
-  echo "add failed, check log"
+  echo "push failed, check log"
   exit 1
 fi
