@@ -11,7 +11,7 @@ else
   exit 1
 fi
 git commit -m "$message" >> script.log
-#git commit -m "Message" GIT_SUCCESS=$?
+##git commit -m "Message" GIT_SUCCESS=$?
 if [ $? -eq 0 ]
 then 
   echo "commit completed successfully"
@@ -25,7 +25,7 @@ if [ $? -eq 0 ]
 then 
   echo "push completed successfully"
 else 
-  echo 'exit code'
+  echo 'exit code' $?
   echo "push failed, check log"
   exit 1
 fi
