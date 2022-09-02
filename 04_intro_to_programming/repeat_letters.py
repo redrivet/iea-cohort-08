@@ -4,7 +4,7 @@
 
 repeat_this = input('Enter a word or string of characters: ')
 
-how_many = 9
+how_many = 3
 
 repeated = ''.join([character * how_many for character in repeat_this])
 
