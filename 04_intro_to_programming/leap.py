@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""An even number checker"""
+"""A leap year checker"""
 
 year = int(input('Enter a year: '))
 
