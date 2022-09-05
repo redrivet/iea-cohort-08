@@ -4,7 +4,7 @@
 
 import random
 target = random.randint(1, 100)
-
+# print(target) # use during testing only
 guess = int(input('Welcome to the guessing game.  Guess any number between 1 and 100: '))
 
 while guess != target:
