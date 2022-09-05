@@ -1,9 +1,9 @@
 #!/bin/env python3
 
-"""An implementation of the Sieve of Eratosthones"""
+"""Learning about the Sieve of Eratosthones"""
 
 def sieve(value):
-    """Returns a dictionary"""
+    """Returns a list"""
     top  = (value + 1)
     lst = [True] * top
     for i in range(2, int(value**0.5 + 1)):
