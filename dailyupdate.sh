@@ -1,4 +1,5 @@
-#!/bin/bash 
+#!/bin/bash
+
 cp script.log "/home/nlawson/scriptlog/script.log_$(date +'%Y%m%d-%H%M%S')"
 message="Updated juypter on `date +'%Y-%m-%d %H:%M:%S'`"
 git add . >script.log 2>&1 >> script.log
