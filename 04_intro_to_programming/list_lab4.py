@@ -19,7 +19,7 @@ while len(list_to_add) != 0:
         list_item = input('Enter a word to be added to the list (or stop to end): ')
 
 sliced_list = list_to_add[1:-1]
-half_list = (int(len(sliced_list)/2))
+half_list = (len(sliced_list)//2)
 
 print(f"Original list: {str(list_to_add[1:-1])}")
 print(f"Last half of list: {str(sliced_list[half_list::])}")
