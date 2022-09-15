@@ -1,0 +1,1 @@
+/usr/local/bin:/usr/bin:/bin:/sbin:/usr/local/sbin:/usr/sbin:/usr/local/bin:/home/jr/.local/bin:/home/jr/bin:/usr/local/bin
