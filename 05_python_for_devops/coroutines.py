@@ -1,3 +1,5 @@
+#!/bin/env python3
+
 import asyncio
 
 # Async declares this as a coroutine
