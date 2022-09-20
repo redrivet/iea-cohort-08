@@ -1,20 +1,15 @@
 #!/bin/env python3
 
-"""Playing with .upper, .lower, and stride.
-   Alternate capital every other character,
-   Every 4th character, every 5th character, etc."""
+"""Playing with .upper, .lower, and stepping.
+   Alternate capital letters, iterating over
+   a specified string and step length."""
 
-start_string = input('Enter a string of letters:  ').lower()
+start_string = input('Enter a string of letters:  ')
 start_step = int(input('Choose a step value:  '))
 result = ''
 
-#for char in start_string:
-
-
-print(f'start_string is {start_string}')
-#start_list = list(start_string)
-#print(f'start_list is {start_list}')
-step_string = (start_string[0::start_step])
-print(f'step_string) is {step_string}')
-#step_list = (start_list[0::start_step])
-#print(f'start_list by {start_step}s is {step_list}')
+for index in range(0, len(start_string), start_step * 2):
+    step_one = start_string[index:index+start_step].upper()
+    step_two = start_string[index+start_step:index + start_step * 2].lower()
+    result += step_one + step_two
+print(result)
