@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
 
-#  this seems to be python 2.  Need to work on converting to python 3.  Look into
-#  Futurize or Modernize
-
 """
     Lab - Roman Numerals.  Original assignment:  Write a program that
-    converts Roman numerals to decimal numbers.  Extended to also
-    convert decimals to Roman numerals.
+    converts Roman numerals to decimal numbers.
 """
 
 # Instructor solution
