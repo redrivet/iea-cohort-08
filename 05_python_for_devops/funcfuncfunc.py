@@ -3,7 +3,7 @@
 def calculate(op1, op2, operator='+'):
     """
     Takes in two operands (op1, op2) and an operator (+, -, *, /)
-    to perform a calculation.
+    to perform a calculation. Exception for Zero Dision handled below.
 
     Returns answer.
     """
@@ -14,7 +14,11 @@ def calculate(op1, op2, operator='+'):
     if operator == '-':
         answer = int_1 - int_2
     elif operator == '/':
-        answer = int_1 / int_2
+        try:
+            answer = int_1 / int_2
+        except ZeroDivisionError:
+            print('You cannot divide by 0!')
+            answer = 0
     elif operator == '*':
         answer = int_1 * int_2
     elif operator == '+':
@@ -22,8 +26,8 @@ def calculate(op1, op2, operator='+'):
 
     return answer
 
-# answ = calculate(2, 5, '/')
-# print(answ)
+answ = calculate(0, 2, '/')
+print(answ)
 
 
 def collatz(n):
@@ -71,9 +75,9 @@ def sumdigits(num):
     else:
         return ans
         
-digits = 1234567
-digit_sum = sumdigits(digits)
-print(f'The Sum of: {digits} is... \n {digit_sum}')
+# digits = 1234567
+# digit_sum = sumdigits(digits)
+# print(f'The Sum of: {digits} is... \n {digit_sum}')
 
 
 def add_comas(n):
