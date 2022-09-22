@@ -1,6 +1,10 @@
+#!/usr/bin/env python3
+
 def calculate(op1, op2, operator='+'):
     """
-    Takes in two operands (op1, op2) and an operator to perform a calculation.
+    Takes in two operands (op1, op2) and an operator (+, -, *, /)
+    to perform a calculation.
+
     Returns answer.
     """
 
@@ -11,12 +15,14 @@ def calculate(op1, op2, operator='+'):
         answer = int_1 - int_2
     elif operator == '/':
         answer = int_1 / int_2
+    elif operator == '*':
+        answer = int_1 * int_2
     elif operator == '+':
         answer = int_1 + int_2
 
     return answer
 
-# answ = calculate(2, 5, '-')
+# answ = calculate(2, 5, '/')
 # print(answ)
 
 
@@ -65,9 +71,9 @@ def sumdigits(num):
     else:
         return ans
         
-# digits = 1278
-# digit_sum = sumdigits(digits)
-# print(f'The Sum of: {digits} is... \n {digit_sum}')
+digits = 1234567
+digit_sum = sumdigits(digits)
+print(f'The Sum of: {digits} is... \n {digit_sum}')
 
 
 def add_comas(n):
@@ -89,5 +95,5 @@ def add_comas(n):
         print('no commas needed')
         return ''.join(number_list)
 
-with_comas = add_comas(1234578)
-print(with_comas)
+# with_comas = add_comas(1234578)
+# print(with_comas)
