@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from math import log
+
 def calculate(op1, op2, operator='+'):
     """
     Takes in two operands (op1, op2) and an operator (+, -, *, /)
@@ -7,12 +9,21 @@ def calculate(op1, op2, operator='+'):
 
     Returns answer.
     """
-
-    int_1 = int(op1)
-    int_2 = int(op2)
+    try:
+        int_1 = int(op1)
+        int_2 = int(op2)
+    except ValueError:
+        print('You must enter integers for param1 and param2.')
+        return None
 
     if operator == '-':
         answer = int_1 - int_2
+    elif operator == 'log':
+        try:
+            answer = log(int_1) / log(int_2)
+        except ValueError:
+            print('Cannot log 0')
+            answer = None
     elif operator == '/':
         try:
             answer = int_1 / int_2
@@ -26,7 +37,7 @@ def calculate(op1, op2, operator='+'):
 
     return answer
 
-answ = calculate(0, 2, '/')
+answ = calculate(34, 9, 'log')
 print(answ)
 
 
