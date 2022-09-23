@@ -22,6 +22,8 @@ def calculate(val1, val2, operator):
             calculation = val1 / val2
         except ZeroDivisionError:
             print('Cannot divde by zero.')
+        finally:
+            print('0')
             quit()
     return calculation
 
