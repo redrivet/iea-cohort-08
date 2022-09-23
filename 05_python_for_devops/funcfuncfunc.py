@@ -37,8 +37,8 @@ def calculate(op1, op2, operator='+'):
 
     return answer
 
-answ = calculate(34, 9, 'log')
-print(answ)
+# answ = calculate(34, 9, 'log')
+# print(answ)
 
 
 def collatz(n):
@@ -68,7 +68,7 @@ def collatz(n):
     else:
         print('Please enter a number that is greater than 1...')
 
-#collatz(23)
+collatz(23)
 
 
 def sumdigits(num):
@@ -86,9 +86,8 @@ def sumdigits(num):
     else:
         return ans
         
-# digits = 1234567
-# digit_sum = sumdigits(digits)
-# print(f'The Sum of: {digits} is... \n {digit_sum}')
+# digits = 999999999999999999
+# print(f'The Sum of Sums for: {digits} is... \n {sumdigits(digits)}')
 
 
 def add_comas(n):
@@ -110,5 +109,5 @@ def add_comas(n):
         print('no commas needed')
         return ''.join(number_list)
 
-# with_comas = add_comas(1234578)
+# with_comas = add_comas(123457890779)
 # print(with_comas)
