@@ -5,4 +5,6 @@
     e.g., add_commas(12345) would return "12,345"
 """
 
-def add_commas:
+def add_commas(number):
+    return(f'{number:,d}')
+print(add_commas(1023))

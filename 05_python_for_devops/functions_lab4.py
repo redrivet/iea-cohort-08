@@ -18,7 +18,7 @@ def collatz(start_number):
             start_number = 3 * start_number + 1
         else: # even number
             start_number = start_number // 2
-    print(1)
+    print(start_number)        
 
 print('Collatz Conjecture sequence: ')
 
