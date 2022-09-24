@@ -6,25 +6,42 @@
 
 ################################################################################
 
-# def calculate(val1, val2, operator):
-#     """ Docstring for lab calculator. """
-#     if operator == '+':
-#         calculation = val1 + val2
-#     if operator == '-':
-#         calculation = val1 - val2
-#     if operator == '*':
-#         calculation = val1 * val2
-#     if operator == '/':
+
+# import operator
+# import math
+
+# def calculate(val1, val2, action):
+#     """
+#     This is a simple calculator for the IEA labs.
+
+#     :param val1:  an operand to test arithmetic functions.
+#     :param val2:  the second operand.
+#     :param action:  symbol for the operation to be performed.
+#     :currently supports '+' , '-' , '*' , '/', and 'log'.
+#     :returns:  calculation specified by operator <action>.
+#     :raises: ZeroDivisionError if division by zero is attempted.
+#     :raises:  ValueError if invalid 'log' operation is attempted.
+#     """
+#     calculation = ()
+#     if action == '+':
+#         calculation = operator.add(val1, val2)
+#     if action == '-':
+#         calculation = operator.sub(val1, val2)
+#     if action == '*':
+#         calculation = operator.mul(val1, val2)
+#     if action == '/':
 #         try:
-#             calculation = val1 / val2
+#             calculation = operator.truediv(val1, val2)
 #         except ZeroDivisionError:
 #             print('Cannot divde by zero.')
-#         finally:
-#             print('0')
-#             quit()
+#     if action == 'log':
+#         try:
+#             calculation = math.log(val1, val2)
+#         except ValueError:
+#             print('math.log(x,[base]) is invalid with base <= zero.')
 #     return calculation
 
-# print(calculate(2, 0, '/'))
+# print(calculate(49.0, 7, 'log'))
 
 # ################################################################################
 
