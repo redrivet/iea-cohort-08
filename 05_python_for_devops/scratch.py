@@ -1,8 +1,10 @@
 #!/bin/env python3
 
-""" Use this to copy/paste stuff from other scripts that are
-    not working as expected, or as a placeholder to preserve
-    something that I haven't managed to break...yet. """
+"""
+    Use this to copy/paste stuff from other scripts as a
+    placeholder to preserve things that I haven't managed
+    to break...yet.
+"""
 
 ################################################################################
 
@@ -10,9 +12,15 @@
 # import operator
 # import math
 
+# print("""\nThis is a simple calculator for addition, subtraction,
+#          multiplication, division, and log.""")
+# operand1 = input('Enter first number:  ')
+# operand2 = input('Enter second number:  ')
+# symbol = input("Enter an action < '+' '-' '*' '/' 'log' >  ")
+
 # def calculate(val1, val2, action):
 #     """
-#     This is a simple calculator for the IEA labs.
+#     This is a simple calculator for the labs assignment.
 
 #     :param val1:  an operand to test arithmetic functions.
 #     :param val2:  the second operand.
@@ -24,24 +32,25 @@
 #     """
 #     calculation = ()
 #     if action == '+':
-#         calculation = operator.add(val1, val2)
+#         calculation = operator.add(int(val1), int(val2))
 #     if action == '-':
-#         calculation = operator.sub(val1, val2)
+#         calculation = operator.sub(int(val1), int(val2))
 #     if action == '*':
-#         calculation = operator.mul(val1, val2)
+#         calculation = operator.mul(int(val1), int(val2))
 #     if action == '/':
 #         try:
-#             calculation = operator.truediv(val1, val2)
+#             calculation = operator.truediv(int(val1), int(val2))
 #         except ZeroDivisionError:
 #             print('Cannot divde by zero.')
 #     if action == 'log':
 #         try:
-#             calculation = math.log(val1, val2)
+#             calculation = math.log(int(val1), int(val2))
 #         except ValueError:
-#             print('math.log(x,[base]) is invalid with base <= zero.')
+#             print('Error:  log is invalid with base <= zero.')
 #     return calculation
 
-# print(calculate(49.0, 7, 'log'))
+# print(calculate(operand1, operand2, symbol))
+
 
 # ################################################################################
 
@@ -74,7 +83,7 @@
 #             start_number = 3 * start_number + 1
 #         else: # even number
 #             start_number = start_number // 2
-#     print(start_number)        
+#     print(start_number)
 
 # print('Collatz Conjecture sequence: ')
 
