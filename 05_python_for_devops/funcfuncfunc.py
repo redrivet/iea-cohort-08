@@ -2,7 +2,8 @@
 
 from math import log
 
-def calculate(op1, op2, operator='+'):
+
+def calculate(op1, op2, operator="+"):
     """
     Takes in two operands (op1, op2) and an operator (+, -, *, /)
     to perform a calculation. Exception for Zero Dision handled below.
@@ -13,29 +14,30 @@ def calculate(op1, op2, operator='+'):
         int_1 = int(op1)
         int_2 = int(op2)
     except ValueError:
-        print('You must enter integers for param1 and param2.')
+        print("You must enter integers for param1 and param2.")
         return None
 
-    if operator == '-':
+    if operator == "-":
         answer = int_1 - int_2
-    elif operator == 'log':
+    elif operator == "log":
         try:
             answer = log(int_1) / log(int_2)
         except ValueError:
-            print('Cannot log 0')
+            print("Cannot log 0")
             answer = None
-    elif operator == '/':
+    elif operator == "/":
         try:
             answer = int_1 / int_2
         except ZeroDivisionError:
-            print('You cannot divide by 0!')
+            print("You cannot divide by 0!")
             answer = 0
-    elif operator == '*':
+    elif operator == "*":
         answer = int_1 * int_2
-    elif operator == '+':
+    elif operator == "+":
         answer = int_1 + int_2
 
     return answer
+
 
 # answ = calculate(34, 9, 'log')
 # print(answ)
@@ -52,21 +54,22 @@ def collatz(n):
      This will continue to loop until number is equal to 1 then breaks.
     """
     number = int(n)
-    print(f'Starting at: {number}')
+    print(f"Starting at: {number}")
     if number > 1:
         while True:
             if number % 2 == 0:
                 number = number // 2
-                print(('-' * 12), number)
+                print(("-" * 12), number)
                 if number == 1:
                     break
             else:
                 number = (number * 3) + 1
-                print(('-' * 12), number)
+                print(("-" * 12), number)
                 if number == 1:
                     break
     else:
-        print('Please enter a number that is greater than 1...')
+        print("Please enter a number that is greater than 1...")
+
 
 collatz(23)
 
@@ -85,7 +88,8 @@ def sumdigits(num):
         return sumdigits(ans)
     else:
         return ans
-        
+
+
 # digits = 999999999999999999
 # print(f'The Sum of Sums for: {digits} is... \n {sumdigits(digits)}')
 
@@ -101,13 +105,14 @@ def add_comas(n):
         number_list.reverse()
         index = 3
         while index < len(number_list):
-            number_list.insert(index, ',')
+            number_list.insert(index, ",")
             index += 4
         number_list.reverse()
-        return(''.join(number_list))
+        return "".join(number_list)
     else:
-        print('no commas needed')
-        return ''.join(number_list)
+        print("no commas needed")
+        return "".join(number_list)
+
 
 # with_comas = add_comas(123457890779)
 # print(with_comas)
