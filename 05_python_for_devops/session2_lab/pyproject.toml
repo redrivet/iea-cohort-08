@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "session2-lab"
+version = "0.1.0"
+description = ""
+authors = ["leblanck <kyle@leblanc.sh>"]
+readme = "README.md"
+packages = [{include = "session2_lab"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "*"
+black = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
