@@ -4,29 +4,32 @@
 # Write a function 'calculate' which is passed two operands and an
 # operator, and returns the calculated calculation, e.g.,
 # calculate(2, 4, '+') would return 6
+# ^^^ DONE ^^^
 
-# Define function that accepts 3 arguments - done
-# Perform the calculation of val1 'action' val2 -done
-# Addition:  handle the edge case of dividing by zero - done
+# Define function that accepts 3 arguments
+# Perform the calculation of val1 'action' val2
+# Addition:  handle the edge case of dividing by zero
+# ^^^ DONE ^^^
 
 # Extend your calculator to allow 'log' as an operator.
 # Use the second argument as the base, i.e.:
 # calculate(49.0, 7, 'log') = log7(49.0) = 2.0.
 # Use a try/except/else block around your code that computes the log.
+# ^^^ DONE ^^^
+
+# Next lab:  turn your calculate() function into a standalone program
+# which takes 3 command line arguments and invokes calculate() with those arguments
+
 """
 
 import operator
 import math
-# import argparse
-
-# parser = argparse.ArgumentParser(description='Perform simple calculations.')
-# parser.add_argument# pick up from here(https://docs.python.org/dev/library/argparse.html))
 
 print("""\nThis is a simple calculator for addition, subtraction,
          multiplication, division, and log.""")
 operand1 = input('Enter first number:  ')
 operand2 = input('Enter second number:  ')
-symbol = input("Enter an action < '+' '-' '*' '/' 'log' >:  ")
+symbol = input("Enter an action < '+' '-' '*' '/' 'log' >  ")
 
 def calculate(val1, val2, action):
     """

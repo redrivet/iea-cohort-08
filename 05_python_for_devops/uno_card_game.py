@@ -15,7 +15,7 @@ def build_deck():
     wildcards = ["Wild", "Wild Draw Four"]
     for color in colors:
         for value in values:
-            card_val = "{} {}".format(color, value)
+            card_val = (f'{color} {value}')
             deck.append(card_val)
             if value != 0:
                 deck.append(card_val)
