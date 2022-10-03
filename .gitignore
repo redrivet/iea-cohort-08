@@ -1,0 +1,17 @@
+# ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+<<<<<<< HEAD
+
+# ignore all files in these directories
+/00_introduction/
+/01_devops_concepts/
+/02_linux_bash_scripting/demos/
+/02_linux_bash_scripting/images/
+/03_mastering_git/
+
+# individual files
+
+
+=======
+__pycache__
+>>>>>>> 6a7d598d183b1e2682acd5638e93a93e1d9d8a46
