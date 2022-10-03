@@ -1,4 +1,4 @@
 requests>=2.25
 pytest==6.2.3
 pytest-mock==3.5.1
-dateutil
+python-dateutil
