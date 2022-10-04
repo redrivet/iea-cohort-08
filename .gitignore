@@ -1,6 +1,13 @@
+bin/
+etc/
+include/
+lib/
+lib64
+share/
+pyvenv.cfg
+
 # ignore Jupyter notebook checkpoints
 .ipynb_checkpoints/
-<<<<<<< HEAD
 
 # ignore all files in these directories
 /00_introduction/
@@ -10,8 +17,8 @@
 /03_mastering_git/
 
 # individual files
+*.ods#
+*.docx#
+*.rpm
 
-
-=======
 __pycache__
->>>>>>> 6a7d598d183b1e2682acd5638e93a93e1d9d8a46
