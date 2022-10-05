@@ -1,0 +1,7 @@
+---
+name: Michaelangelo
+nickname: Mikey
+weapons:
+  - "Nunchucks"
+  - "Throwing stars"
+color: Orange
