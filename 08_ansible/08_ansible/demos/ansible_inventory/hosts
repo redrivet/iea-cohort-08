@@ -1,0 +1,43 @@
+[instructors]
+student0-1
+student0-2
+
+[students]
+student1-1 ansible_host=34.75.187.23 ansible_password=Noahsome
+student1-2 ansible_host=34.139.148.121 ansible_password=Noahsome
+student2-1 ansible_host=35.231.247.29 ansible_password=foldoink
+student2-2 ansible_host=35.237.251.148 ansible_password=foldoink
+student3-1 ansible_host=35.196.141.132 ansible_password=voltKuhn
+student3-2 ansible_host=104.196.198.147 ansible_password=voltKuhn
+student4-1 ansible_host=34.139.65.121 ansible_password=norclop
+student4-2 ansible_host=34.73.171.210 ansible_password=norclop
+student5-1 ansible_host=35.227.2.3 ansible_password=chugCato
+student5-2 ansible_host=34.138.27.145 ansible_password=chugCato
+student6-1 ansible_host=34.75.118.250 ansible_password=RoyOdom
+student6-2 ansible_host=34.139.74.220 ansible_password=RoyOdom
+student7-1 ansible_host=34.148.105.61 ansible_password=Paartic
+student7-2 ansible_host=35.243.227.133 ansible_password=Paartic
+student8-1 ansible_host=35.185.39.253 ansible_password=betsas
+student8-2 ansible_host=35.227.22.144 ansible_password=betsas
+student9-1 ansible_host=34.75.114.166 ansible_password=hamPate
+student9-2 ansible_host=34.148.11.0 ansible_password=hamPate
+student10-1 ansible_host=34.138.33.181 ansible_password=denshop
+student10-2 ansible_host=34.73.47.237 ansible_password=denshop
+student11-1 ansible_host=34.73.239.5 ansible_password=capsAlan
+student11-2 ansible_host=34.148.234.222 ansible_password=capsAlan
+student12-1 ansible_host=34.73.221.45 ansible_password=yiplaps
+student12-2 ansible_host=35.227.81.102 ansible_password=yiplaps
+student13-1 ansible_host=34.75.11.59 ansible_password=blowhog
+student13-2 ansible_host=35.196.216.169 ansible_password=blowhog
+student14-1 ansible_host=34.138.49.29 ansible_password=almsbrig
+student14-2 ansible_host=34.75.89.72 ansible_password=almsbrig
+student15-1 ansible_host=34.121.23.157 ansible_password=pigsdike
+student15-2 ansible_host=34.171.28.19 ansible_password=pigsdike
+student16-1 ansible_host=34.69.165.99 ansible_password="LowePd's"
+student16-2 ansible_host=34.171.145.117 ansible_password="LowePd's"
+student17-1 ansible_host=34.172.58.8 ansible_password=dotsWald
+student17-2 ansible_host=35.232.58.211 ansible_password=dotsWald
+
+[all:vars]
+ansible_connection=ssh
+ansible_user=ubuntu

@@ -1,0 +1,7 @@
+[development]
+
+[staging]
+student0-1 ansible_host=34.74.64.138
+
+[production]
+student0-2 ansible_host=35.237.28.127
