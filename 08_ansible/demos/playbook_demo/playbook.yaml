@@ -1,0 +1,27 @@
+---
+- hosts: all
+  tasks:
+    - name: Copy message of the day
+      become: yes
+      template:
+        src: motd.j2
+        dest: /etc/motd
+      notify: inform change
+    - name: Show the message of the day
+      command: cat /etc/motd
+      register: motd
+    - name: Show the output of the cat
+      debug:
+        var: motd.stdout
+    - name: Greet everyone
+      debug:
+        msg: "Hello there {{ item }}"
+      loop:
+        - JR
+        - Brock
+        - Nick
+        - Curtis
+  handlers:
+    - name: inform change
+      debug:
+        msg: "The MOTD has been updated!"
