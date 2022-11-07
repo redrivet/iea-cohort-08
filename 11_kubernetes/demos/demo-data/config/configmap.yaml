@@ -1,0 +1,11 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: example-configmap
+data:
+  database: mongodb
+  database_uri: mongodb://localhost:27017
+  properties_file: |
+    log_level=debug
+    dbhost=localhost
+    import_thing=really_important

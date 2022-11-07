@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-config-map-vol
+spec:
+  containers:
+  - name:  myapp
+    image: busybox
+    args:
+    - sleep
+    - "3600"
+    volumeMounts:
+      - name: myvolume
+        mountPath: "/etc/config-maps"
+        readOnly: true
+  volumes:
+  - name: myvolume
+    configMap:
+      name: example-configmap

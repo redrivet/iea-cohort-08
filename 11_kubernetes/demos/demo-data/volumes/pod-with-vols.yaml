@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-vol
+spec:
+  containers:
+  - name:  myapp
+    image: busybox
+    args:
+    - sleep
+    - "3600"
+    volumeMounts:
+      - mountPath: "/test"
+        name: fileclaim
+  volumes:
+    - name: fileclaim
+      persistentVolumeClaim:
+        claimName: example-pvc
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-vol-2
+spec:
+  containers:
+  - name:  myapp
+    image: busybox
+    args:
+    - sleep
+    - "3600"
+    volumeMounts:
+      - mountPath: "/test"
+        name: fileclaim
+        readOnly: true
+  volumes:
+    - name: fileclaim
+      persistentVolumeClaim:
+        claimName: example-pvc
