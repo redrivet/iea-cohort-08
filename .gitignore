@@ -5,6 +5,7 @@ __pycache__
 # Demo virtualenvs
 08_ansible/demos/ansible_demo
 10_docker/demos/venv
+12_aws/demos/venv
 
 
 # Libreoffice lock files
